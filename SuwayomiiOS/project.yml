@@ -1,0 +1,15 @@
+name: SuwayomiiOS
+options:
+  bundleIdPrefix: dev.komf
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  SuwayomiiOS:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: dev.komf.suwayomi-ios
+      GENERATE_INFOPLIST_FILE: YES
+      INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads: YES
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
